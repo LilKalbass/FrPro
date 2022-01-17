@@ -82,12 +82,12 @@ console.log("Multiplication table:", output9);
 
 let number = Math.floor(Math.random() * 11);
 while (true) {
-    let guess = +prompt("Guess the number: ");
+    let guess = prompt("Guess the number: ");
     if (guess === number) {
         console.log("U guessed the number!!!!!");
         break;
     }
-    if (guess === 0) {
+    if (guess === null) {
         {
             break;
         }
