@@ -87,6 +87,11 @@ while (true) {
         console.log("U guessed the number!!!!!");
         break;
     }
+    if (guess === 0) {
+        {
+            break;
+        }
+    }
 }
 
 
