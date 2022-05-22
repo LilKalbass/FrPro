@@ -14,10 +14,10 @@ function getSymbolIndex(str, symbol)
 {
     const search = str.indexOf(symbol);
     if (search === - 1) {
-      console.log(symbol + " - " + "not found" + ", " + "index of symbol is " + "'" + search + "'");   
+        console.log(symbol + " - " + "not found" + ", " + "index of symbol is " + "'" + search + "'");
     }
-    else if(search > -1) {
-      console.log(symbol + " - " + "found" + ", " + "index of symbol is " + "'" + search + "'");  
+    else if (search > -1) {
+        console.log(symbol + " - " + "found" + ", " + "index of symbol is " + "'" + search + "'"); 
     };
 };
 
@@ -52,7 +52,7 @@ let arr = [ 10, 11, 12, 13, 14 ];
 Array.prototype.forEach1 = function (callback)
 {
     for (let i = 0; i < this.length; i++) {
-        callback(this[ i ], i, arr)
+        callback(this[ i ], i, arr);
     }
 };
 
@@ -82,7 +82,7 @@ Array.prototype.some1 = function (callback)
     const arr = this;
     for (let i = 0; i < arr.length; i++) {
         if (callback(arr[ i ], i, arr)) {
-            return true
+            return true;
         }
     }
     return false;
