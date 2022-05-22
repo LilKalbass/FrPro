@@ -3,13 +3,13 @@
 // Если передали объект, то предусмотреть ситуацию,
 // когда свойствами этого объекта будут объекты или массивы.
 // Если передали массив, то предусмотреть ситуацию,
-// когда элементами этого массива будут объекты или массивы.
+// когда элементами этого массива будут объекты или массивы
 // Если передали примитив - вернуть его.
 
-function isObject(object) {
+function isObject(object)
+{
     return typeof object === "object" && object !== null && !Array.isArray(object);
-}
-
+};
 
 function deepCopy(input) 
 {
@@ -41,13 +41,12 @@ function deepCopy(input)
 }
 
 const a = {
-    name:"qwertyyyyyyyy",
-    surname:"ytrewqqqqqqqq",
-}
+    name: "qwertyyyyyyyy",
+    surname: "ytrewqqqqqqqq",
+};
 let b = deepCopy(a)
 console.log(b);
 
 arr = [ "hey budddy", 1, 2, 3, 4, 5 ];
-
 let q = deepCopy(arr);
 console.log(q);
