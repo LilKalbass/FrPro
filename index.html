@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    .red {
+        color: red;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .big {
+        font-size: 36px;
+    }
+
+    body {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .wrapper {
+        margin-left: 20px;
+        margin-top: 20px;
+        border: 1px solid red;
+    }
+
+    ul {
+        border: 1px solid blue;
+    }
+
+    li {
+        border: 1px solid yellow;
+    }
+
+    .scroll-wrapper {
+        border: 1px solid red;
+        padding: 10px;
+        height: 100px;
+        overflow-y: scroll;
+    }
+
+    .scroll-wrapper p {
+        margin: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        width: 150px;
+        border: 1px solid blue;
+    }
+
+    form input:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+
+    form .buttons-container {
+        margin-top: 10px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<!--<div class="wrapper" tabindex="-1">-->
+<!--    <ul>-->
+<!--        <li>Element 1</li>-->
+<!--        <li>Element 2</li>-->
+<!--        <li>Element 3</li>-->
+<!--        <li>Element 4</li>-->
+<!--        <li>Element 5</li>-->
+<!--    </ul>-->
+
+<!--    <a href="http://www.google.com">Go to Google</a>-->
+<!--</div>-->
+
+<!--<div>-->
+<!--    <p>1</p>-->
+<!--    <p>2</p>-->
+<!--    <p>3</p>-->
+<!--</div>-->
+
+<!--<div class="scroll-wrapper">-->
+<!--</div>-->
+
+<form tabindex="-1">
+    <input type="text" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.com" />
+    <input type="password" name="password" placeholder="Password" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    <div class="buttons-container">
+        <button type="submit">Submit</button>
+        <button type="button" class="password-visibility" disabled>Show</button>
+    </div>
+</form>
+</body>
+
+</html>
