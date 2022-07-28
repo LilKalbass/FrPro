@@ -70,7 +70,7 @@ function createStorageManager(storageKey) {
         storage.setItem(storageKey, json);
         console.log("saved");
     }
-
+///qwe//
     function load() {
         const json = storage.getItem(storageKey);
         try {
