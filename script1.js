@@ -46,7 +46,7 @@ function getStorage(storageType) {
             return localStorage;
     }
 }
-
+ //
 function createStorageManager(storageKey, storageType) {
     const storage = getStorage(storageType);
 
